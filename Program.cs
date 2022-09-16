@@ -24,13 +24,13 @@ else
 44 5 78 -> 78
 22 3 9 -> 22*/
 
-Console.Write("Введите первое число: ");
+/*Console.Write("Введите первое число: ");
 int number1 = int.Parse(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int number2 = int.Parse(Console.ReadLine());
 Console.Write("Введите третье число: ");
 int number3 = int.Parse(Console.ReadLine());
-/*//Первый вариант решения
+//Первый вариант решения
 int max = number1;
 if (number2 > max)
 {
@@ -40,7 +40,24 @@ if (number3 > max)
 {
     max = number3;
 }
-Console.WriteLine($"Ьольшее число из трех равно {max}");*/
-/*//Второй вариант решения с использованием библиотек
+Console.WriteLine($"Ьольшее число из трех равно {max}");
+//Второй вариант решения с использованием библиотек
 int max = Math.Max(number1, Math.Max(number2, number3));
 Console.WriteLine($"Ьольшее число из трех равно {max}");*/ 
+
+/*Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+4 -> да
+-3 -> нет
+7 -> нет*/
+
+Console.Write("Введите число: ");
+int number = int.Parse(Console.ReadLine());
+if (number % 2 == 0)
+{
+    Console.WriteLine($"Число {number} является четным.");
+}
+else
+{
+    Console.WriteLine($"Число {number} не четное");
+}
