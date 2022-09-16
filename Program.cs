@@ -51,7 +51,7 @@ Console.WriteLine($"Ьольшее число из трех равно {max}");*
 -3 -> нет
 7 -> нет*/
 
-Console.Write("Введите число: ");
+/*Console.Write("Введите число: ");
 int number = int.Parse(Console.ReadLine());
 if (number % 2 == 0)
 {
@@ -60,4 +60,25 @@ if (number % 2 == 0)
 else
 {
     Console.WriteLine($"Число {number} не четное");
+}*/
+
+/*Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+5 -> 2, 4
+8 -> 2, 4, 6, 8*/
+
+Console.Write("Введите число: ");
+int number = int.Parse(Console.ReadLine());
+int a = 0;
+while (a <= number)
+{
+    if (a % 2 == 0)
+    {
+    Console.Write($"{a},");
+    a ++;
+    }
+    else
+    {
+    a ++;
+    }
 }
